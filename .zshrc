@@ -99,9 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# fnm
+export PATH="/Users/anyasamoydyuk/Library/Application Support/fnm:$PATH"
+eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
 
 export GITHUB_PACKAGES_TOKEN=$(op read "op://CircleCI/cp6jsljdlpjzbdxxsxsmxld4fy/GITHUB_PACKAGES_TOKEN")
